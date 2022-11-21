@@ -29,7 +29,11 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          user: williamsonm
+          template: classic
+          base: header
 
   lines:
     runs-on: ubuntu-latest
